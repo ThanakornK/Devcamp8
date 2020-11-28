@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Container, Row } from 'react-bootstrap';
+import Menu from './component/Menu';
+import main_course from './pages/Main_course';
+import Sidebar from './component/Sidebar';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+      <Menu />
+      <Sidebar />
+      </div>
+
   );
 }
-
 export default App;
