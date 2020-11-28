@@ -35,3 +35,7 @@
 .row #title {
     flex: 70%;
 }
+
+.SidebarList #active {
+    background-color: orange;
+}
