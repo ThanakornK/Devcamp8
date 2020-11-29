@@ -1,0 +1,7 @@
+.mainLib {
+    background-color: skyblue;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    padding-left: 200px;
+}

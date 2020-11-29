@@ -4,21 +4,21 @@ import * as AiIcons from "react-icons/ai";
 
 export const SidebarData = [
     {
-        title: "Home",
+        title: "Library",
         icon: <IoIcons.IoIosArchive/>,
-        path: "/"
+        path: '/library'
     },
 
     {
         title: "Course store",
         icon: <AiIcons.AiOutlineShoppingCart/>,
-        path: "/store"
+        path: '/store'
     },
 
     {
         title: "Help",
         icon: <IoIcons.IoIosHelpCircle/>,
-        path: "/help"
+        path: '/help'
     },
 ]
 
