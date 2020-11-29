@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Menu from './component/Menu';
+import Sidebar from './component/Sidebar';
+import MainLib from './pages/MainLib';
+import MainStore from './pages/MainStore';
+import MainHelp from './pages/MainHelp';
+
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Container, Row , Col} from 'react-bootstrap';
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Menu />
+        <Container fluid="true">
+          <Row noGutters >
+            <Col sm={1.5}><Sidebar /></Col>
+            <Col sm>
+              <Switch>
+                <Route path='/store' component={MainStore} />
+                <Route path='/help' component={MainHelp} />
+                <Route path='/library' component={MainLib} />
+                <Route path='/owned' component={MainLib} />
+                <Route exact path='/library' component={MainLib} />
+              </Switch>
+            </Col>
+          </Row>
+        </Container>
+
+
+      </BrowserRouter>
+    );
+  }
 }
-
 export default App;

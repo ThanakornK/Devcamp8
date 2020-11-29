@@ -1,0 +1,7 @@
+.mainLib {
+    
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    align-self: stretch;
+}

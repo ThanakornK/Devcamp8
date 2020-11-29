@@ -1,0 +1,4 @@
+.CourseList .list:hover{
+    cursor: pointer;
+    background-color: green;
+}
