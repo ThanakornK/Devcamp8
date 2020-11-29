@@ -1,11 +1,12 @@
 import React from 'react';
 import './../styles/MainLib.css';
-import { Row, Col, Container } from 'react-bootstrap';
+import LibNav from './../component/LibNav';
+import { Row, Col, Container, Nav } from 'react-bootstrap';
 
 function MainLib() {
     return (
         <div className="mainLib" >
-            <h1 >Hello</h1>
+            <LibNav />
         </div>
     );
 }
