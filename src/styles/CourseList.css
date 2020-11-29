@@ -1,0 +1,10 @@
+.CourseList .list:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+.DetailCourse {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
