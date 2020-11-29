@@ -25,8 +25,8 @@ class App extends Component {
                 <Route path='/store' component={MainStore} />
                 <Route path='/help' component={MainHelp} />
                 <Route path='/library' component={MainLib} />
-                {/* <Route path='/library/enrolled' component={} /> */}
-                <Route exact path='/' component={MainLib} />
+                <Route path='/owned' component={MainLib} />
+                <Route exact path='/library' component={MainLib} />
               </Switch>
             </Col>
           </Row>

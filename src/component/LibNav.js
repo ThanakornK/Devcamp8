@@ -1,17 +1,36 @@
 import React from 'react'
-import { Row, Col, Container, Nav } from 'react-bootstrap';
+import { Row, Col, Container, Nav, ToggleButton, Tab, Tabs } from 'react-bootstrap';
+import classnames from 'classnames';
+
+import Enrolled from './../pages/Enrolled';
+import Owned from './../pages/Owned';
+import './../styles/LibNav.css';
 
 function LibNav() {
     return (
         <div>
-            <Nav fill variant="tabs" defaultActiveKey="/library">
+            <Tabs defaultActiveKey="enrolled" >
+                <Tab eventKey="enrolled" title="Enrolled" >
+                    <Enrolled />
+                </Tab>
+                <Tab eventKey="owned" title="Owned">
+                    <Owned />
+                </Tab>
+            </Tabs>
+
+            {/* <Nav fill variant="tabs" defaultActiveKey="enrolled">
                 <Nav.Item>
-                    <Nav.Link href="/library">Enrolled</Nav.Link>
+                    <Nav.Link 
+                    eventKey="enrolled"
+                    >Enrolled</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/library/OwnCourse">Owned</Nav.Link>
+                    <Nav.Link 
+                    eventKey="owned"
+                    >Owned
+                    </Nav.Link>
                 </Nav.Item>
-            </Nav>
+            </Nav> */}
         </div>
     )
 }
