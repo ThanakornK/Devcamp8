@@ -1,12 +1,26 @@
 import React from 'react';
 import './../styles/MainLib.css';
-import { Row, Col, Container } from 'react-bootstrap';
+
+import { Row, Col, Container, Nav } from 'react-bootstrap';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+import LibNav from './../component/LibNav';
+import Enrolled from './Enrolled';
+import Owned from './Owned';
+
 
 function MainLib() {
     return (
         <div className="mainLib" >
-            <h1 >Hello</h1>
+            <LibNav />
+            {/* <BrowserRouter>
+                <Switch>
+                    <Route path='/library' component={Enrolled} />
+                    <Route path='/owned' component={Owned} />
+                </Switch>
+            </BrowserRouter> */}
         </div>
+
     );
 }
 

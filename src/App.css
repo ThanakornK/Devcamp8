@@ -1,11 +1,22 @@
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .App {
   width: 100vw;
   height: 100vw;
+}
+
+.Row {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.Col {
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 

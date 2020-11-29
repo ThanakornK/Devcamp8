@@ -6,7 +6,7 @@ import Logo from './../images/logo.png';
 export default function Menu() {
     return (
       <Navbar style={{backgroundColor:"#FFD800"}} expand="lg">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/library">
           <img alt="" src={Logo} width="150" height="50" className="d-inline align-top" />
         </Navbar.Brand>
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
