@@ -1,0 +1,10 @@
+.FormInput {
+    padding: 5px;
+    margin: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

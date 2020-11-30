@@ -12,6 +12,7 @@ import ContentCourse from './pages/ContentCourse';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import UserProfile from './pages/UserProfile';
+import CreateCourse from './pages/CreateCourse';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row , Col} from 'react-bootstrap';
@@ -55,6 +56,7 @@ class App extends Component {
                 <Route path='/login' component={Login} />
                 <Route path='/profile' component={UserProfile}/>
                 <Route exact path='/' component={MainLib} />
+                <Route path='/CreateCourse' component={CreateCourse} />
               </Switch>
             </Col>
           </Row>
