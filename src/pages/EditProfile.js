@@ -11,7 +11,7 @@ export default class EditProfile extends Component {
                     <div class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
                         <br/>
-                        <input type="file" class="form-control-file" id="profileImg" className="center"/>
+                        <input type="file" class="form-control-file" id="profileImg" className="uploadProfileCenter" />
                     </div>
                 </form>
                 <div className="userName">Username: PondTHElnwZAAA</div>
