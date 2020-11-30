@@ -28,9 +28,6 @@ function ModalQuestion() {
                 </Modal.Header>
                 <Modal.Body>
                     <InputGroup size="lg">
-                        <InputGroup.Prepend>
-                            <InputGroup.Text>Question</InputGroup.Text>
-                        </InputGroup.Prepend>
                         <FormControl as="textarea" aria-label="With textarea" />
                     </InputGroup>
                 </Modal.Body>
