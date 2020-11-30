@@ -25,10 +25,11 @@ class App extends Component {
               <Switch>
                 <Route path='/store' component={MainStore} />
                 <Route path='/help' component={MainHelp} />
-                <Route path='/library' component={MainLib} />
+                <Route exact path='/library' component={MainLib} />
+                <Route path='/library/:courseId' component={ContentCourse} />
                 <Route path='/owned' component={MainLib} />
                 <Route exact path='/library' component={MainLib} />
-                <Route path='/1' component={ContentCourse} />
+                <Route exact path='/1' component={ContentCourse} />
               </Switch>
             </Col>
           </Row>
