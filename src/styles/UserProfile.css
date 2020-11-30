@@ -1,0 +1,17 @@
+.profileImg{
+    padding-left: 30%;
+}
+
+.description{
+    font-size: large;
+    padding-top: 50px;
+    padding-left: 30px;
+    display:block;
+
+}
+
+.collectionHeader{
+    font-size: larger;
+    text-align: center;
+    padding-top: 50px;
+}
