@@ -59,7 +59,7 @@ export default class UserProfile extends React.Component {
     </div>
   </div>
 
-  <a class="btn btn-primary btn-lg float-right" href="/library" role="button">Edit Profile</a>
+  <a class="btn btn-primary btn-lg float-right" href="/editProfile" role="button">Edit Profile</a>
   </div>
         )
     }
