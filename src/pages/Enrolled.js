@@ -1,6 +1,8 @@
 import React from 'react';
 import { ListGroup, ListGroupItem, Container } from 'react-bootstrap';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { EnrollData } from './../component/EnrollData';
+import ContentCourse from './ContentCourse';
 import './../styles/CourseList.css';
 import axios from 'axios'
 
@@ -33,7 +35,7 @@ export default class Enrolled extends React.Component {
             <div style={{ padding: "10px" }}>
                 <ListGroup className="CourseList">
                     {this.state.course.map(val =>
-                        <ListGroupItem className="list" onClick={() => { window.location.pathname = val.c_name }}>
+                        <ListGroupItem className="list" onClick={() => { window.location.pathname = val.id }}>
                             <div><h4>{val.c_name}</h4></div>
                             <Container className="DetailCourse" fluid="true">
                                 <div style={{ paddingRight: "10px" }}>Type: {val.type} </div>
@@ -56,3 +58,5 @@ export default class Enrolled extends React.Component {
         )
     }
 }
+
+export default Enrolled
