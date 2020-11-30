@@ -18,7 +18,7 @@ import axios from 'axios'
 export const EnrollData = [
     {
         id:1,
-        title:"สอนทำสีที่แม้แต่ลิงอุรังอุตังแม่เลี้ยงเดี่ยวยังทำตามได้",
+        title:"สอนทำสีที่แม้แต่ลิงอุรังอุตังแก่ยังทำตามได้",
         type:"Painting",
         cost:1500.00,
         toytype:"Figure",

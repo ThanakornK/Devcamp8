@@ -1,0 +1,11 @@
+.form{
+    align-items: center;
+    font-size: large;
+    padding-left: 500px;
+    padding-top: 20px;
+    align-content: center;
+}
+
+.form-control{
+    width: 200px;
+}

@@ -1,0 +1,41 @@
+.OwnBar {
+    height: 100%;
+    width: 200px;
+    background-color: #FFDF40;
+}
+
+.OwnbarList {
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.OwnbarList .row {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.OwnbarList .row:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+.row #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.row #title {
+    flex: 70%;
+}
+
+.OwnbarList #active {
+    background-color: orange;
+}
