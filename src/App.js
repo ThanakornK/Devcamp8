@@ -8,6 +8,7 @@ import Sidebar from './component/Sidebar';
 import MainLib from './pages/MainLib';
 import MainStore from './pages/MainStore';
 import MainHelp from './pages/MainHelp';
+import ContentCourse from './pages/ContentCourse';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row , Col} from 'react-bootstrap';
@@ -27,6 +28,7 @@ class App extends Component {
                 <Route path='/library' component={MainLib} />
                 <Route path='/owned' component={MainLib} />
                 <Route exact path='/library' component={MainLib} />
+                <Route path='/1' component={ContentCourse} />
               </Switch>
             </Col>
           </Row>

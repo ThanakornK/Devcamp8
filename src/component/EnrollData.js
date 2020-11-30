@@ -2,6 +2,7 @@ import React from 'react'
 
 export const EnrollData = [
     {
+        id:1,
         title:"สอนทำสีที่แม้แต่ลิงอุรังอุตังแม่เลี้ยงเดี่ยวยังทำตามได้",
         type:"Painting",
         cost:1500.00,
@@ -9,6 +10,7 @@ export const EnrollData = [
         owner:"pondInw00725420924956120"
     },
     {
+        id:2,
         title:"สอนปั้นโมเดลที่แม้แต่ลูกแมวน้ำยังทำตามได้",
         type:"Modeling",
         cost:3500.00,
