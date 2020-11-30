@@ -9,18 +9,40 @@ import MainLib from './pages/MainLib';
 import MainStore from './pages/MainStore';
 import MainHelp from './pages/MainHelp';
 import ContentCourse from './pages/ContentCourse';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import UserProfile from './pages/UserProfile';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row , Col} from 'react-bootstrap';
 
 class App extends Component {
+  // constructor(){
+  //   super();
+  //   this.state = {login:false}
+  // }
+
+  // _login = (bool)=>{
+  //   this.setState({
+  //     login: bool
+  //   });
+  // }
+  
   render() {
     return (
       <BrowserRouter>
         <Menu />
         <Container fluid="true">
           <Row noGutters >
-            <Col sm={1.5}><Sidebar /></Col>
+            <Col sm={1.5}>
+              
+            {/* <button onClick={this._login.bind(null, true)}>show</button> */}
+
+              {/* { this.state.login && ( */}
+              <Sidebar />
+              {/* )} */}
+              
+              </Col>
             <Col sm>
               <Switch>
                 <Route path='/store' component={MainStore} />
@@ -29,6 +51,10 @@ class App extends Component {
                 <Route path='/owned' component={MainLib} />
                 <Route exact path='/library' component={MainLib} />
                 <Route path='/1' component={ContentCourse} />
+                <Route path='/register' component={Register}/>
+                <Route path='/login' component={Login} />
+                <Route path='/profile' component={UserProfile}/>
+                <Route exact path='/' component={MainLib} />
               </Switch>
             </Col>
           </Row>
