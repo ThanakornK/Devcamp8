@@ -11,7 +11,22 @@
 }
 
 .collectionHeader{
-    font-size: larger;
+    font-size: xx-large;
     text-align: center;
     padding-top: 50px;
+    font-weight: 1000;
+}
+
+.profileHeader{
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 1000;
+}
+
+.userName{
+    padding-top: 50px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
 }
