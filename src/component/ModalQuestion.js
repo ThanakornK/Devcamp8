@@ -1,6 +1,5 @@
 import React, { Component, useState } from 'react';
 import { Modal, Button, InputGroup, FormControl, Form } from 'react-bootstrap';
-import TestForm from './TestForm';
 import AlertSendQ from './AlertSendQ';
 
 import './../styles/ModalQuestion.css';
@@ -28,7 +27,11 @@ function ModalQuestion() {
                     <Modal.Title>Question about course</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <TestForm></TestForm>
+                    <Form>
+                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" rows={3} />
+                        </Form.Group>
+                    </Form>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseModal}>

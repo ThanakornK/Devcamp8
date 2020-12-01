@@ -1,6 +1,6 @@
 import React from 'react';
 import * as IoIcons from "react-icons/io5";
-import * as RiIcons from "react-icons/ri";
+import * as AiIcons from "react-icons/ai";
 
 export const OwnBarData = [
     {
@@ -9,8 +9,8 @@ export const OwnBarData = [
         path:"/createCourse"
     },
     {
-        title:"แก้ไข",
-        icon:<RiIcons.RiFileEditFill />,
+        title:"ข้อความ",
+        icon:<AiIcons.AiFillMessage />,
         path:"/editCourse"
     }
 ]
