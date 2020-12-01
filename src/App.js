@@ -18,6 +18,7 @@ import EditProfile from './pages/EditProfile';
 import Contact from './pages/Contact';
 import EditContent from './pages/EditContent';
 import SelectEditContent from './pages/SelectEditContent';
+import PreviewCourse from './pages/PreviewCourse';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -51,7 +52,7 @@ class App extends Component {
             </Col>
             <Col sm>
               <Switch>
-                <Route path='/store' component={MainStore} />
+                <Route exact path='/store' component={MainStore} />
                 <Route path='/help' component={MainHelp} />
                 <Route exact path='/library' component={MainLib} />
                 <Route path='/library/:courseId' component={ContentCourse} />
@@ -68,6 +69,7 @@ class App extends Component {
                 <Route path='/editContent' component={EditContent} />
                 <Route path='/editSelectContent' component={SelectEditContent} />
                 <Route path='/contact' component={Contact}/>
+                <Route path='/store/preview/:courseId' component={PreviewCourse} />
               </Switch>
             </Col>
           </Row>
