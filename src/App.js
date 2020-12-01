@@ -59,13 +59,8 @@ class App extends Component {
                 {/* <Route path='/1' component={ContentCourse} /> */}
                 <Route path='/register' component={Register}/>
                 <Route path='/login' component={Login} />
-<<<<<<< HEAD
                 <Route path='/profile/:userId' component={UserProfile}/>
                 <Route path='/editProfile' component={EditProfile}/>
-=======
-                <Route path='/profile' component={UserProfile} />
-                <Route path='/editProfile' component={EditProfile} />
->>>>>>> 21b1b6ab95725fb3d9260fa9343954ecf3085bf8
                 <Route exact path='/' component={MainLib} />
                 <Route path='/CreateCourse' component={CreateCourse} />
                 <Route path='/CreateContent' component={CreateContent} />
