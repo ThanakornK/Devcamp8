@@ -7,7 +7,7 @@ import './../styles/EditProfile.css';
 function SelectEditContent() {
     return (
         <div style={{ height: "100vh" }}>
-            <h2 className="center">Create Course</h2>
+            <h2 className="center">Edit Content</h2>
 
             <Container >
                 <Row>

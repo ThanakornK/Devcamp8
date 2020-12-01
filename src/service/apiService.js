@@ -1,2 +1,2 @@
-const URL = "http://07ca5cf42e73.ngrok.io" ;
+const URL = "http://942bd487701d.ngrok.io" ;
 export default URL ;

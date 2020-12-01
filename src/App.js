@@ -19,6 +19,7 @@ import Contact from './pages/Contact';
 import EditContent from './pages/EditContent';
 import SelectEditContent from './pages/SelectEditContent';
 import PreviewCourse from './pages/PreviewCourse';
+import EditCourse from './pages/EditCourse';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -67,6 +68,7 @@ class App extends Component {
                 <Route path='/CreateCourse' component={CreateCourse} />
                 <Route path='/CreateContent' component={CreateContent} />
                 <Route path='/editContent' component={EditContent} />
+                <Route path='/editCourse' component={EditCourse} />
                 <Route path='/editSelectContent' component={SelectEditContent} />
                 <Route path='/contact' component={Contact}/>
                 <Route path='/store/preview/:courseId' component={PreviewCourse} />
