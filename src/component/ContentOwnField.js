@@ -16,7 +16,7 @@ function ContentOwnField() {
                                 <div style={{ paddingRight: "5px" }}>by {val.owner}</div>
                             </Container>
                             <div style={{ fontSize: "18px" }}>price: {val.cost} baht</div>
-                            <Button>Edit</Button>
+                            <Button onClick={() => {window.location.pathname = "/editContent";}}>Edit</Button>
                         </ListGroupItem>
                     )
                 })}

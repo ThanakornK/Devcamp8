@@ -16,6 +16,7 @@ import CreateCourse from './pages/CreateCourse';
 import CreateContent from './pages/CreateContent';
 import EditProfile from './pages/EditProfile';
 import Contact from './pages/Contact';
+import EditContent from './pages/EditContent';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -63,6 +64,7 @@ class App extends Component {
                 <Route exact path='/' component={MainLib} />
                 <Route path='/CreateCourse' component={CreateCourse} />
                 <Route path='/CreateContent' component={CreateContent} />
+                <Route path='/editContent' component={EditContent} />
                 <Route path='/contact' component={Contact}/>
               </Switch>
             </Col>

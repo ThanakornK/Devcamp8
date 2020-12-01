@@ -11,6 +11,6 @@ export const OwnBarData = [
     {
         title:"กล่องคำถาม",
         icon:<RiIcons.RiInboxArchiveFill />,
-        path:"/editCourse"
+        path:"/inbox"
     }
 ]
