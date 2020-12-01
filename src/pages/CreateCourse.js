@@ -4,6 +4,9 @@ import CreateCourseForm from '../component/CreateCourseForm';
 import './../styles/CreateCourse.css';
 
 function CreateCourse() {
+    function sendButtonClick(){
+        alert("Your course has been created successfully!");
+    }
     return (
         <div style={{ height: "100vh" }}>
             <h2 className="center">Create Course</h2>

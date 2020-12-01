@@ -5,9 +5,41 @@ import FooterEnrolled from './../component/FooterEnrolled';
 import ModalQuestion from '../component/ModalQuestion';
 // import Modal from 'react-modal';
 import './../styles/ContentCourse.css';
+import axios from 'axios';
+import user from '../testData/userdata'
+import url from '../service/apiService'
 
 
 export default class ContentCourse extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            content: [],
+            course: []
+        };
+    }
+
+    componentDidMount() {
+        const { match: { params } } = this.props;
+
+        console.log(params)
+        // console.log(axios.get(`http://8cf0d250a525.ngrok.io/api/courses/1`).data)
+        axios.get(url+`/api/contents/getByCourseID` + window.location.pathname)
+            .then(res => {
+                const content = res.data;
+                console.log(content);
+                this.setState({ content: content });
+            })
+        console.log(this.state.content);
+        axios.get(url+`/api/courses` + window.location.pathname)
+            .then(res => {
+                const course = res.data;
+                console.log(course);
+                this.setState({ course: course });
+            })
+    }
+
 
     render() {
         return (

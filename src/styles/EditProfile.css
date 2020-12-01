@@ -13,3 +13,9 @@ textarea{
     min-width: 600px;
     min-height: 300px;
 }
+
+.profileUploadCenter{
+    align-items: center;
+    margin-left: 250px;
+    text-align: center;
+}

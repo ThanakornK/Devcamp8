@@ -7,9 +7,14 @@ import './../styles/ModalQuestion.css';
 function ModalQuestion() {
     const [show, setShowModal] = useState(false);
 
+    function handleSendModal(){
+        setShowModal(false);
+        alert("Your question has been posted successfully!");
+
+    }
     const handleCloseModal = () => setShowModal(false);
     const handleShowModal = () => setShowModal(true);
-
+    
     return (
         <>
             <Button variant="primary" onClick={handleShowModal}>
@@ -19,6 +24,7 @@ function ModalQuestion() {
             <Modal
                 show={show}
                 onHide={handleCloseModal}
+                onHide={handleSendModal}
                 backdrop="static"
                 keyboard={false}
                 size="lg"
@@ -37,7 +43,7 @@ function ModalQuestion() {
                     <Button variant="secondary" onClick={handleCloseModal}>
                         Close
                     </Button>
-                    <Button onClick={handleCloseModal}> Send </Button>
+                    <Button onClick={handleSendModal}> Send </Button>
                 </Modal.Footer>
             </Modal>
         </>
