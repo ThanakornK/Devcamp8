@@ -1,3 +1,12 @@
+.profileImg{
+    width: 500px;
+    height: 500px;
+}
+
+.profileImgHolder{
+    margin-left: 400px;
+}
+
 .center{
     align-items: center;
     margin-left: 50px;
@@ -18,4 +27,10 @@ textarea{
     align-items: center;
     margin-left: 250px;
     text-align: center;
+}
+
+.collectionImg{
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
 }

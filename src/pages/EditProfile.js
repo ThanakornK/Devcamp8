@@ -6,7 +6,9 @@ export default class EditProfile extends Component {
         return (
             <div>
                 <div className="profileHeader">Edit Profile</div>
-                <img src="./images/guest_profile.png" className="profileImg"/>
+                <div className="profileImgHolder">
+                    <img src="./images/guest_profile.png" className="profileImg"/>
+                </div>
                 <form className="text-center">
                     <div class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -28,7 +30,7 @@ export default class EditProfile extends Component {
            
   <div class="card-group">
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -37,7 +39,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -46,7 +48,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -55,7 +57,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -64,7 +66,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -73,7 +75,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -82,7 +84,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -91,7 +93,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>
@@ -100,7 +102,7 @@ export default class EditProfile extends Component {
                 </form>
     </div>
     <div class="card" className="col-sm-4">
-      <img class="card-img-top" src="./images/guest_profile.png" alt="Card image cap"/>
+      <img className="collectionImg" src="./images/guest_profile.png" alt="Card image cap"/>
       <form className="center">
                     <span class="form-group">
                         <label for="profileImg">Upload your Profile Picture</label>

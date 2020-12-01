@@ -29,56 +29,49 @@ export default class UserProfile extends React.Component {
     return (
       <div>
         <div className="profileHeader">Profile</div>
-        <img src={url+this.state.profile.img_pro} className="profileImg" style={{width:"500px",height:"500px",}}></img>
+        <div className="profileImgHolder">
+          <img src={url+this.state.profile.img_pro} className="profileImg"></img>
+        </div>
         <div className="userName">Username: </div>
         <div className="description">{this.state.profile.bio}</div>
         <div className="collectionHeader">My Collection</div>
 
         <div class="card-group">
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" style={{width:"512px",height:"512px",}} src={url+this.state.profile.img_collect1} alt="Card image cap" />
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect1} alt="Card image cap" />
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect2} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect2} alt="Card image cap"/>
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect3} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect3} alt="Card image cap"/>
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect4} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect4} alt="Card image cap"/>
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect5} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect5} alt="Card image cap"/>
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect6} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect6} alt="Card image cap"/>
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect7} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect7} alt="Card image cap"/>
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect8} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect8} alt="Card image cap"/>
+
           </div>
           <div class="card" className="col-sm-4">
-            <img class="card-img-top" src={url+this.state.profile.img_collect9} alt="Card image cap" style={{width:"512px",height:"512px",}}/>
-            <div class="card-body">
-            </div>
+            <img className="collectionImg" src={url+this.state.profile.img_collect9} alt="Card image cap"/>
+
           </div>
         </div>
 
