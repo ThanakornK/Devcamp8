@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import CreateCourseForm from '../component/CreateCourseForm';
+import CreateContentForm from '../component/CreateContentForm';
 import './../styles/CreateCourse.css';
 
 function CreateContent() {
@@ -11,7 +11,7 @@ function CreateContent() {
             <Container >
                 <Row>
                     <Col>
-                        <CreateCourseForm />
+                        <CreateContentForm />
                     </Col>
                 </Row>
                 <Row style={{display:"flex", justifyContent:"center"}}>

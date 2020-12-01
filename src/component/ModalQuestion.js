@@ -29,7 +29,7 @@ function ModalQuestion() {
                 <Modal.Body>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Control as="textarea" rows={3} />
+                            <Form.Control as="textarea" style={{marginLeft:"10%"}} rows={3} />
                         </Form.Group>
                     </Form>
                 </Modal.Body>

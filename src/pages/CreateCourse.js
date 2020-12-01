@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import CreateForm from './../component/CreateForm';
+import CreateCourseForm from '../component/CreateCourseForm';
 import './../styles/CreateCourse.css';
 
 function CreateCourse() {
@@ -11,11 +11,11 @@ function CreateCourse() {
             <Container >
                 <Row>
                     <Col>
-                        <CreateForm />
+                        <CreateCourseForm />
                     </Col>
                 </Row>
                 <Row style={{display:"flex", justifyContent:"center"}}>
-                    <Button className="center">Confirm</Button>
+                    <Button className="center" onClick={() => window.location.pathname = "/CreateContent"}>Confirm</Button>
                 </Row>
             </Container>
             
