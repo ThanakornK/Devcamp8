@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { InputGroup, FormControl, Form } from 'react-bootstrap';
 import './../styles/EditProfile.css';
 
 export default class EditProfile extends Component {
@@ -6,6 +7,7 @@ export default class EditProfile extends Component {
         return (
             <div>
                 <div className="profileHeader">Edit Profile</div>
+<<<<<<< HEAD
                 <img src="./images/guest_profile.png" className="profileImg" />
                 <form className="text-center">
                     <div class="form-group">
@@ -25,6 +27,24 @@ export default class EditProfile extends Component {
                 </form>
 
                 <div className="collectionHeader">My Collection</div>
+=======
+                <div className="profileImgHolder">
+                    <img src="./images/guest_profile.png" className="profileImg"/>
+                </div>
+
+                    <Form>
+                        <Form.Group style={{marginLeft:520}}> 
+                            <Form.Label>Upload Image</Form.Label>
+                            <Form.File id="newProfileImg"/>
+                        </Form.Group>
+
+                        <Form.Label className="bioHead">Username: PondTHElnwZAAA</Form.Label>
+
+                        <InputGroup className="FormInput">
+                            <FormControl as="textarea" placeholder="Enter Your Description" col="50" style={{marginLeft:0}} />
+                        </InputGroup>
+                    </Form>
+>>>>>>> 7e86195089005eb7e1480485ebfd919a74d351dc
 
                 <div class="card-group">
                     <div class="card" className="col-sm-4">

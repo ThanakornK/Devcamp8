@@ -1,9 +1,9 @@
 import React from 'react';
-import { FormControl, InputGroup } from 'react-bootstrap';
+import { InputGroup, FormControl } from 'react-bootstrap';
 import './../styles/CreateCourse.css';
 import './../styles/EditProfile.css';
 
-function CreateContentForm() {
+function SelectEditContentForm() {
     return (
         <div>
             <InputGroup className="FormInput" className="FormInput" >
@@ -18,8 +18,8 @@ function CreateContentForm() {
             <label for="profileImg">Upload Content Picture</label>
             <br />
             <input type="file" class="form-control-file" id="profileImg" className="uploadProfileCenter" />
-        </div >
+        </div>
     )
 }
 
-export default CreateContentForm
+export default SelectEditContentForm
