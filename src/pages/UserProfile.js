@@ -58,8 +58,10 @@ export default class UserProfile extends React.Component {
                 </Card>
           )}
         </Row>
-        <a class="btn btn-primary btn-lg float-right" href="/editProfile" role="button">Edit Profile</a>
-        <a class="btn btn-primary btn-lg float-right" href="/addCollection/1" role="button">Add Collection</a>
+        <Row className="buttonContainer">
+          <a style={{marginRight:15}} class="btn btn-primary btn-lg float-right" href="/editProfile" role="button">Edit Profile</a>
+          <a class="btn btn-primary btn-lg float-right" href="/addCollection/1" role="button">Add Collection</a>
+        </Row>
       </div>
     )
   }
