@@ -21,6 +21,8 @@ import SelectEditContent from './pages/SelectEditContent';
 import PreviewCourse from './pages/PreviewCourse';
 import EditCourse from './pages/EditCourse';
 import AddCollection from './pages/AddCollection';
+import Inbox from './pages/Inbox';
+import MailReader from './pages/MailReader';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -74,6 +76,8 @@ class App extends Component {
                 <Route path='/contact' component={Contact}/>
                 <Route path='/store/preview/:courseId' component={PreviewCourse} />
                 <Route path='/addCollection/1' component={AddCollection}/>
+                <Route path='/inbox' component={Inbox}/>
+                <Route path='/mailReader' component={MailReader}/>
               </Switch>
             </Col>
           </Row>
