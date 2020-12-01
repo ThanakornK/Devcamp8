@@ -13,11 +13,12 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import UserProfile from './pages/UserProfile';
 import CreateCourse from './pages/CreateCourse';
+import CreateContent from './pages/CreateContent';
 import EditProfile from './pages/EditProfile';
 import Contact from './pages/Contact';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Container, Row , Col} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends Component {
   // constructor(){
@@ -30,7 +31,7 @@ class App extends Component {
   //     login: bool
   //   });
   // }
-  
+
   render() {
     return (
       <BrowserRouter>
@@ -38,14 +39,14 @@ class App extends Component {
         <Container fluid="true">
           <Row noGutters >
             <Col sm={1.5}>
-              
-            {/* <button onClick={this._login.bind(null, true)}>show</button> */}
+
+              {/* <button onClick={this._login.bind(null, true)}>show</button> */}
 
               {/* { this.state.login && ( */}
               <Sidebar />
               {/* )} */}
-              
-              </Col>
+
+            </Col>
             <Col sm>
               <Switch>
                 <Route path='/store' component={MainStore} />
@@ -57,10 +58,11 @@ class App extends Component {
                 {/* <Route path='/1' component={ContentCourse} /> */}
                 <Route path='/register' component={Register}/>
                 <Route path='/login' component={Login} />
-                <Route path='/profile' component={UserProfile}/>
-                <Route path='/editProfile' component={EditProfile}/>
+                <Route path='/profile' component={UserProfile} />
+                <Route path='/editProfile' component={EditProfile} />
                 <Route exact path='/' component={MainLib} />
                 <Route path='/CreateCourse' component={CreateCourse} />
+                <Route path='/CreateContent' component={CreateContent} />
                 <Route path='/contact' component={Contact}/>
               </Switch>
             </Col>

@@ -2,7 +2,7 @@ import React from 'react';
 import { FormControl, InputGroup } from 'react-bootstrap';
 import './../styles/CreateCourse.css';
 
-function CreateForm() {
+function CreateCourseForm() {
     return (
         <div>
             <InputGroup className="FormInput">
@@ -21,4 +21,4 @@ function CreateForm() {
     )
 }
 
-export default CreateForm
+export default CreateCourseForm
