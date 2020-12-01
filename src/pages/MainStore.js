@@ -5,6 +5,7 @@ import { ListGroup, ListGroupItem, Container } from 'react-bootstrap';
 import axios from 'axios'
 import userData from '../testData/userdata'
 import url from '../service/apiService'
+import SearchBar from './../component/SearchBar.js';
 
 export default class MainStore extends React.Component {
 
@@ -30,6 +31,8 @@ export default class MainStore extends React.Component {
     render () {
         return (
             <div style={{ padding: "10px" }}>
+            <SearchBar/>
+
                 <ListGroup className="CourseList">
                     {this.state.course.map(val =>
                         <ListGroupItem className="list" onClick={() => { window.location.pathname = '/library/'+val.id }}>
