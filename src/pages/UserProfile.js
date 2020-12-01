@@ -38,7 +38,9 @@ export default class UserProfile extends React.Component {
     return (
       <div>
         <div className="profileHeader">Profile</div>
-        <img src={url + this.state.profile.img_pro} className="profileImg" style={{ width: "500px", height: "500px", }}></img>
+        <div className="profileImgHolder">
+          <img src={url + this.state.profile.img_pro} className="profileImg" style={{ width: "500px", height: "500px", }}></img>
+        </div>
         <div className="userName">Username: {this.state.profile.username}</div>
         <div className="description">{this.state.profile.bio}</div>
         <div className="collectionHeader">My Collection</div>

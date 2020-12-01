@@ -35,7 +35,7 @@ export default class MainStore extends React.Component {
 
                 <ListGroup className="CourseList">
                     {this.state.course.map(val =>
-                        <ListGroupItem className="list" onClick={() => { window.location.pathname = '/library/'+val.id }}>
+                        <ListGroupItem className="list" onClick={() => { window.location.pathname = '/store/preview/'+val.id }}>
                             <div><h4>{val.c_name}</h4></div>
                             <Container className="DetailCourse" fluid="true">
                                 <div style={{ paddingRight: "10px" }}>Type: {val.type} </div>
