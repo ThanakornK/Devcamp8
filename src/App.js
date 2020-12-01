@@ -61,7 +61,7 @@ class App extends Component {
                 <Route path='/register' component={Register}/>
                 <Route path='/login' component={Login} />
                 <Route path='/profile/:userId' component={UserProfile}/>
-                <Route path='/editProfile' component={EditProfile}/>
+                <Route path='/editProfile/:userId' component={EditProfile}/>
                 <Route exact path='/' component={MainLib} />
                 <Route path='/CreateCourse' component={CreateCourse} />
                 <Route path='/CreateContent' component={CreateContent} />
