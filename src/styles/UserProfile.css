@@ -1,5 +1,6 @@
 .profileImg{
-    padding-left: 30%;
+    width: 500px;
+    height: 500px;
 }
 
 .description{
@@ -29,4 +30,14 @@
     text-align: center;
     font-size: xx-large;
     font-weight: 700;
+}
+
+.collectionImg{
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.profileImgHolder{
+    margin-left: 400px;
 }
