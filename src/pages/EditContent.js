@@ -2,10 +2,11 @@ import React from 'react';
 import { Card, Container, Button, Row, Col } from 'react-bootstrap';
 import { ContentData } from './../component/ContentData';
 import EditContentField from './../component/EditContentField';
+import './../styles/ContentCourse.css';
 
 function EditContent() {
     return (
-        <div>
+        <div >
             <Container >
                 <Row style={{ flexDirection: "column" }}>
                     <h2 style={{ alignSelf: "center", paddingTop: "10px" }}>CourseName:</h2>
@@ -25,6 +26,7 @@ function EditContent() {
                                             <Card.Text>
                                                 {val.content}
                                             </Card.Text>
+                                            <Button onClick={() => {window.location.pathname = "/editSelectContent"}}>Edit</Button>
                                         </Card.Body>
                                     </Card>
 
