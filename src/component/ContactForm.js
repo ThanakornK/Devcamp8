@@ -8,11 +8,11 @@ function CreateForm() {
             <InputGroup className="FormInput">
                 <FormControl placeholder="Title" />
             </InputGroup>
-            <InputGroup className="FormInput" size="lg">
-                <FormControl placeholder="Content" />
+            <InputGroup className="FormInput">
+                <FormControl as="textarea" placeholder="What Seems to Be the Problem?" className="contentField"/>
             </InputGroup>
             <InputGroup className="FormInput">
-                <FormControl placeholder="Contact" />
+                <FormControl placeholder="How Can We Contact You Back?(e.g. Tel No., Email  )" className="contactField"/>
             </InputGroup>
         </div>
     )
