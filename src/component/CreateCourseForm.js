@@ -17,6 +17,9 @@ function CreateCourseForm() {
             <InputGroup className="FormInput">
                 <FormControl placeholder="Price" />
             </InputGroup>
+            <InputGroup className="FormInput">
+                <FormControl placeholder="Description"  as="textarea" style={{marginLeft:"0%"}}/>
+            </InputGroup>
         </div>
     )
 }
