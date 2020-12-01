@@ -16,9 +16,6 @@ export default class Enrolled extends React.Component {
           course: []
         };
       }
-    // state = {
-    //     course: []
-    // }
 
     componentDidMount() {
         // console.log(axios.get(`http://8cf0d250a525.ngrok.io/api/courses/1`).data)

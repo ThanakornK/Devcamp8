@@ -46,30 +46,29 @@ export default class ContentCourse extends React.Component {
             <div>
                 <Container >
                     <Row style={{ flexDirection: "column" }}>
-                        <h2 style={{ alignSelf: "center", paddingTop: "10px" }}>CourseName:</h2>
-                        <h3>by: </h3>
+                        <h2 style={{ alignSelf: "center", paddingTop: "10px" }}>{this.state.course.c_name}</h2>
+                        <h3>by: {this.state.course.c_owner}</h3>
                     </Row>
 
                     <Row style={{ display: "flex", flexDirection: "column" }}>
-                        {ContentData.map((val, key) => {
-                            return (
+                        {this.state.content.map(val => 
                                 <Col>
                                     <div style={{ padding: "20px", margin: "20px" }}>
                                         <Card>
-                                            <Card.Img className="imageContent" variant="top" src={val.image} ></Card.Img>
+                                            <Card.Img className="imageContent" variant="top" src={url+val.photo} ></Card.Img>
                                             
                                             <Card.Body>
                                                 <Card.Title>{val.title}</Card.Title>
                                                 <Card.Text>
-                                                    {val.content}
+                                                    {val.text_content}
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>
 
                                     </div>
                                 </Col>
-                            )
-                        })}
+                            
+                        )}
                     </Row>
                     <FooterEnrolled />
                 </Container>
