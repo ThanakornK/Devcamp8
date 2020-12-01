@@ -32,12 +32,22 @@
     font-weight: 700;
 }
 
-.collectionImg{
-    margin-top: 20px;
+.imageContent{
     width: 400px;
     height: 400px;
 }
 
 .profileImgHolder{
     margin-left: 400px;
+}
+
+.collectionContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.imgCard{
+    padding: 10px;
 }

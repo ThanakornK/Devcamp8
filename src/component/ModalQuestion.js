@@ -29,8 +29,8 @@ function ModalQuestion() {
                 keyboard={false}
                 size="lg"
             >
-                <Modal.Header closeButton>
-                    <Modal.Title>Question about course</Modal.Title>
+                <Modal.Header>
+                    <Modal.Title style={{marginLeft:250}}>Question about course</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
