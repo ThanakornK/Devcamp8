@@ -45,13 +45,10 @@ export default class UserProfile extends React.Component {
         <div className="description">{this.state.profile.bio}</div>
         <div className="collectionHeader">My Collection</div>
 
-        <Row style={{ display: "flex", flexDirection: "column" }}>
+        <Row className="collectionContainer">
           {this.state.img.map(val =>
-            <Col>
-              <div style={{ padding: "20px", margin: "20px" }}>
-                <Card>
+                <Card className="imgCard">
                   <Card.Img className="imageContent" variant="top" src={url + val.img} ></Card.Img>
-
                   {/* <Card.Body>
                     <Card.Title>{val.title}</Card.Title>
                     <Card.Text>
@@ -59,14 +56,10 @@ export default class UserProfile extends React.Component {
                     </Card.Text>
                   </Card.Body> */}
                 </Card>
-
-              </div>
-            </Col>
-
           )}
         </Row>
-
         <a class="btn btn-primary btn-lg float-right" href="/editProfile" role="button">Edit Profile</a>
+        <a class="btn btn-primary btn-lg float-right" href="/addCollection/1" role="button">Add Collection</a>
       </div>
     )
   }
