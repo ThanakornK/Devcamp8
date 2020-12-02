@@ -33,12 +33,12 @@ function BuyCourse() {
                         Mock up payment
                     </di>
                 </div>
-                <div className="center" style={{ marginLeft: "-10%", padding: "10px"}}>
+                {/* <div className="center" style={{ marginLeft: "-10%", padding: "10px"}}>
                     <h4>Upload Slip</h4>
                 </div>
                 <div className="center" style={{ marginLeft: "-30%", padding: "10px"}}>
                     <input type="file" class="form-control-file" id="profileImg" className="uploadProfileCenter" />
-                </div>
+                </div> */}
                 <div className="center" style={{ marginLeft: "-30%", padding: "10px"}}>
                     {/* <DateTimePicker /> */}
                 </div>
