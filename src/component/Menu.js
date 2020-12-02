@@ -12,7 +12,7 @@ export default class Menu extends React.Component {
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav >
-              <Nav.Link href="#">Join us!</Nav.Link>
+              <Nav.Link href="/profile/1">Profile</Nav.Link>
               <img src="/images/guest_profile.png" style={{width:"40px", height:"40px"}} />
             </Nav>
           </Navbar.Collapse>

@@ -5,10 +5,13 @@
 
 .description{
     font-size: large;
-    padding-top: 50px;
+    min-height: 100px;
     padding-left: 30px;
     display:block;
-
+    border-style: solid;
+    border-radius: 15px 50px;
+    width: 1200px;
+    margin-left: 90px;
 }
 
 .collectionHeader{
@@ -50,4 +53,10 @@
 
 .imgCard{
     padding: 10px;
+}
+
+.buttonContainer{
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
 }

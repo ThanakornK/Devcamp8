@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputGroup, FormControl, Button, Container } from 'react-bootstrap';
+import { InputGroup, FormControl, Button, Container, Form } from 'react-bootstrap';
 import './../styles/CreateCourse.css';
 
 function EditCourse() {
@@ -25,6 +25,12 @@ function EditCourse() {
                     <InputGroup className="FormInput">
                         <FormControl placeholder="Description" as="textarea" style={{marginLeft:"0%"}}/>
                     </InputGroup>
+                    <Form>
+                        <Form.Group style={{marginLeft:50}}> 
+                            <Form.Label>Upload Image</Form.Label>
+                            <Form.File id="newCourseImg"/>
+                        </Form.Group>
+                    </Form>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", justifyContent:"space-around" }} >
                     <div>
