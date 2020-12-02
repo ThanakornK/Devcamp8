@@ -35,7 +35,7 @@ function BuyCourse() {
                         <Button>Back</Button>
                     </div>
                     <div>
-                        <Button>Confirm</Button>
+                        <Button onClick={() => {window.location.pathname = "/store/informpayment/:CourseID"}}>Confirm</Button>
                     </div>
                 </div>
 
