@@ -13,7 +13,7 @@ function FooterApp() {
                 <div>
                     <div style={{display:"flex", flexDirection:"row"}}>
                         <div> <AiIcons.AiFillPhone /> </div>
-                        <div> Contact us: 090-XXXXXXX </div>  
+                        <div> Contact us: 090-4956120 </div>  
                     </div>
                     <div style={{display:"flex", flexDirection:"row"}}>
                         <div><AiIcons.AiFillMail /></div>
