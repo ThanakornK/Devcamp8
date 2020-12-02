@@ -17,3 +17,8 @@
     margin-left: 42%;
     font-weight: bold;
 }
+
+.vl {
+    border-left: 6px solid #FFD800;
+    height: 700px;
+}
