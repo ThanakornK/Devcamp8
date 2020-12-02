@@ -1,14 +1,18 @@
 import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 import './../styles/Login.css';
+// import {authen} from './../App.js';
 
 export default class Login extends React.Component {
-    
+        // constructor(){
+        //     super();
+        //     this.state={authen:false};
+        // }
 
         render(){
             function signIn(){
-                global.isLoggedIn = 1;
-                alert("Login "+global.isLoggedIn)
+                // this.setState({authen:true});
+                // alert("Login "+ authen)
          }
             return (
             <form className="form">

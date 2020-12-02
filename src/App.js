@@ -27,6 +27,8 @@ import MailReader from './pages/MailReader';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
+// const authen = false;
+
 class App extends Component {
   // constructor(){
   //   super();
@@ -40,7 +42,14 @@ class App extends Component {
   // }
 
   render() {
+    function sideBarShow(){
+      // if(authen){
+        // <Sidebar/>
+      // }      
+    }
+
     return (
+
       <BrowserRouter>
         <Menu />
         <Container fluid="true">
@@ -50,7 +59,10 @@ class App extends Component {
               {/* <button onClick={this._login.bind(null, true)}>show</button> */}
 
               {/* { this.state.login && ( */}
-              <Sidebar />
+              
+              {/* {sideBarShow()} */}
+              <Sidebar/>
+
               {/* )} */}
 
             </Col>
@@ -89,3 +101,4 @@ class App extends Component {
   }
 }
 export default App;
+// export {authen}
