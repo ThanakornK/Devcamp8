@@ -57,15 +57,11 @@ class App extends Component {
         <Container fluid="true">
           <Row noGutters >
             <Col sm={1.5}>
-
-              {/* <button onClick={this._login.bind(null, true)}>show</button> */}
-
-              {/* { this.state.login && ( */}
               
-              {/* {sideBarShow()} */}
+              
               <Sidebar/>
 
-              {/* )} */}
+  
 
             </Col>
             <Col sm>
