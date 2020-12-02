@@ -32,10 +32,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 // const authen = false;
 
 class App extends Component {
-  // constructor(){
-  //   super();
-  //   this.state = {login:false}
-  // }
+  constructor(){
+    super();
+    this.state = {login:false}
+  }
 
   // _login = (bool)=>{
   //   this.setState({
@@ -59,7 +59,7 @@ class App extends Component {
             <Col sm={1.5}>
               
               
-              <Sidebar/>
+              <Sidebar isLogin={ localStorage.getItem('isLogin') } />
 
   
 

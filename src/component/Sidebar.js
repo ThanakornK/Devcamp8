@@ -4,7 +4,7 @@ import { SidebarData } from './SidebarData';
 
 export default class Sidebar extends React.Component {
     render() {
-        return (
+        return ( this.props.isLogin == 1 ?
             <div className="Sidebar">
                 <ul className="SidebarList">
                     {SidebarData.map((val, key) => {
@@ -19,6 +19,9 @@ export default class Sidebar extends React.Component {
                     })}
                 </ul>
             </div>
+
+            :
+            null
         )
     }
 }
