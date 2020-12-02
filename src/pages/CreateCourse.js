@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button, Form } from 'react-bootstrap'
 import CreateCourseForm from '../component/CreateCourseForm';
 import './../styles/CreateCourse.css';
 import { FormControl, InputGroup } from 'react-bootstrap';
@@ -58,6 +58,15 @@ function CreateCourse() {
                             <InputGroup className="FormInput">
                                 <FormControl placeholder="Price" name='price' value={state.price} onChange={handleChange} id="price" />
                             </InputGroup>
+                            <InputGroup className="FormInput">
+                                <FormControl placeholder="Description"  as="textarea" style={{marginLeft:"0%"}}/>
+                            </InputGroup>
+                            <Form>
+                                <Form.Group style={{marginLeft:30}}> 
+                                    <Form.Label >Upload Course Image</Form.Label>
+                                    <Form.File id="courseImg"/>
+                                </Form.Group>
+                            </Form>
                         </div>
                     </Col>
                 </Row>
