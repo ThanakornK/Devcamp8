@@ -81,7 +81,7 @@ class App extends Component {
                 <Route path='/editProfile/:userId' component={EditProfile}/>
                 <Route exact path='/' component={MainLib} />
                 <Route path='/CreateCourse/:userId' component={CreateCourse} />
-                <Route path='/CreateContent' component={CreateContent} />
+                <Route path='/CreateContent/:courseId' component={CreateContent} />
                 <Route path='/editContent/:courseId' component={EditContent} />
                 <Route path='/editSelectContent/:contentId' component={SelectEditContent} />
                 {/* <Route path='/editContent' component={EditContent} /> */}
