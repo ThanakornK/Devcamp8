@@ -17,7 +17,7 @@ function ModalQuestion() {
     
     return (
         <>
-            <Button variant="primary" onClick={handleShowModal}>
+            <Button variant="primary" onClick={handleShowModal} style={{marginLeft:"-100%", marginBottom:"20%"}}>
                 Question?
             </Button>
 
