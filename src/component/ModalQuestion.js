@@ -17,7 +17,7 @@ function ModalQuestion() {
     
     return (
         <>
-            <Button variant="primary" onClick={handleShowModal}>
+            <Button variant="primary" onClick={handleShowModal} style={{marginLeft:"-100%", marginBottom:"20%"}}>
                 Question?
             </Button>
 
@@ -35,7 +35,7 @@ function ModalQuestion() {
                 <Modal.Body>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Control style={{marginLeft:"10%",width:600}} placeholder="title"/>
+                            <Form.Control style={{marginLeft:"10%",width:600}} placeholder="Subject"/>
                         </Form.Group>
                         
                         <Form.Group controlId="exampleForm.ControlTextarea1">
