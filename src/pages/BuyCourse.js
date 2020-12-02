@@ -1,9 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Button, Container } from 'react-bootstrap';
 // import DateTimePicker from './../component/DateTimePicker';
 import './../styles/Store.css';
+import axios from 'axios'
+import url from '../service/apiService'
 
 function BuyCourse() {
+    const [course, setCourse] = useState([])
+    useEffect(() => {
+        // console.log(state)
+        axios.get(url + `/api/get` + window.location.pathname)
+            .then(res => {
+                const course = res.data;
+                console.log(course);
+                setCourse(course)
+            })
+    }, [])
     return (
         <div>
             <Container >
@@ -35,7 +47,18 @@ function BuyCourse() {
                         <Button>Back</Button>
                     </div>
                     <div>
-                        <Button onClick={() => {window.location.pathname = "/library"}}>Confirm</Button>
+                        <Button onClick={() => {
+                            var formData = new FormData();
+                            formData.append("cus_id", localStorage.getItem('user_id'))
+                            axios.post(url + '/api/buy/'+course.id, formData, {
+                                headers: {
+                                    'Content-Type': 'multipart/form-data'
+                                }
+                            }).then(res => {
+                                console.log(res.data)
+                            })
+                            window.location.pathname = "/library"
+                            }}>Confirm</Button>
                     </div>
                 </div>
 
