@@ -9,7 +9,7 @@ function ModalQuestion() {
 
     function handleSendModal(){
         setShowModal(false);
-        alert("Your question has been posted successfully!");
+        alert("Your reply has been sent successfully!");
 
     }
     const handleCloseModal = () => setShowModal(false);
@@ -18,7 +18,7 @@ function ModalQuestion() {
     return (
         <>
             <Button variant="primary" onClick={handleShowModal}>
-                Question?
+                Reply
             </Button>
 
             <Modal
@@ -30,7 +30,7 @@ function ModalQuestion() {
                 size="lg"
             >
                 <Modal.Header>
-                    <Modal.Title style={{marginLeft:250}}>Question about course</Modal.Title>
+                    <Modal.Title style={{marginLeft:250}}>Reply</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>

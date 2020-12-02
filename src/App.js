@@ -19,9 +19,15 @@ import Contact from './pages/Contact';
 import EditContent from './pages/EditContent';
 import SelectEditContent from './pages/SelectEditContent';
 import PreviewCourse from './pages/PreviewCourse';
+import EditCourse from './pages/EditCourse';
+import AddCollection from './pages/AddCollection';
+import Inbox from './pages/Inbox';
+import MailReader from './pages/MailReader';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
+
+// const authen = false;
 
 class App extends Component {
   // constructor(){
@@ -36,7 +42,14 @@ class App extends Component {
   // }
 
   render() {
+    function sideBarShow(){
+      // if(authen){
+        // <Sidebar/>
+      // }      
+    }
+
     return (
+
       <BrowserRouter>
         <Menu />
         <Container fluid="true">
@@ -46,7 +59,10 @@ class App extends Component {
               {/* <button onClick={this._login.bind(null, true)}>show</button> */}
 
               {/* { this.state.login && ( */}
-              <Sidebar />
+              
+              {/* {sideBarShow()} */}
+              <Sidebar/>
+
               {/* )} */}
 
             </Col>
@@ -68,8 +84,14 @@ class App extends Component {
                 <Route path='/CreateContent' component={CreateContent} />
                 <Route path='/editContent/:courseId' component={EditContent} />
                 <Route path='/editSelectContent/:contentId' component={SelectEditContent} />
+                <Route path='/editContent' component={EditContent} />
+                <Route path='/editCourse' component={EditCourse} />
+                <Route path='/editSelectContent' component={SelectEditContent} />
                 <Route path='/contact' component={Contact}/>
                 <Route path='/store/preview/:courseId' component={PreviewCourse} />
+                <Route path='/addCollection/1' component={AddCollection}/>
+                <Route path='/inbox' component={Inbox}/>
+                <Route path='/mailReader' component={MailReader}/>
               </Switch>
             </Col>
           </Row>
@@ -81,3 +103,4 @@ class App extends Component {
   }
 }
 export default App;
+// export {authen}

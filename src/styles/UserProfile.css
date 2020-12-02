@@ -5,10 +5,13 @@
 
 .description{
     font-size: large;
-    padding-top: 50px;
+    min-height: 100px;
     padding-left: 30px;
     display:block;
-
+    border-style: solid;
+    border-radius: 15px 50px;
+    width: 1200px;
+    margin-left: 90px;
 }
 
 .collectionHeader{
@@ -32,12 +35,28 @@
     font-weight: 700;
 }
 
-.collectionImg{
-    margin-top: 20px;
+.imageContent{
     width: 400px;
     height: 400px;
 }
 
 .profileImgHolder{
     margin-left: 400px;
+}
+
+.collectionContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.imgCard{
+    padding: 10px;
+}
+
+.buttonContainer{
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
 }
