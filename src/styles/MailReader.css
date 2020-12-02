@@ -3,3 +3,13 @@
     margin: 10px;
     justify-content: center;
 }
+
+.mailCard{
+    margin-left: 300px;
+    margin-top: 30px;
+    font-size: large;
+}
+
+.title{
+    font-weight: bold;
+}
