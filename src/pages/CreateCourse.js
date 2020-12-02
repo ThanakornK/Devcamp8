@@ -11,8 +11,8 @@ function CreateCourse() {
     const [state, setState] = useState({
         title: '',
         toy_type: '',
-        price:'',
-        type:'',
+        price: '',
+        type: '',
         des: ''
     })
 
@@ -50,8 +50,19 @@ function CreateCourse() {
                             <InputGroup className="FormInput">
                                 <FormControl placeholder="Title" name='title' value={state.title} onChange={handleChange} />
                             </InputGroup>
-                            <InputGroup className="FormInput">
-                                <FormControl placeholder="Type" name='type' value={state.type} onChange={handleChange} id="type" />
+                            <InputGroup className="FormInput" style={{display:"flex", flexDirection:"column"}}>
+                                <div >
+                                <Form.Label>Type</Form.Label>
+                                </div>
+                                <div>
+                                <Form.Control as="select" placeholder="Type">
+                                    <option>Painting</option>
+                                    <option>Sculpturing</option>
+                                    <option>Modify part</option>
+                                </Form.Control>
+                                </div>
+
+                                {/* <FormControl placeholder="Type" name='type' value={state.type} onChange={handleChange} id="type" /> */}
                             </InputGroup>
                             <InputGroup className="FormInput">
                                 <FormControl placeholder="Toy Type" name='toy_type' value={state.toy_type} onChange={handleChange} id="toy_type" />
@@ -60,12 +71,12 @@ function CreateCourse() {
                                 <FormControl placeholder="Price" name='price' value={state.price} onChange={handleChange} id="price" />
                             </InputGroup>
                             <InputGroup className="FormInput">
-                                <FormControl placeholder="Description"  as="textarea" style={{marginLeft:"0%"}} name='des' value={state.des} onChange={handleChange} id="des"/>
+                                <FormControl placeholder="Description" as="textarea" style={{ marginLeft: "0%" }} name='des' value={state.des} onChange={handleChange} id="des" />
                             </InputGroup>
                             <Form>
-                                <Form.Group style={{marginLeft:30}}> 
+                                <Form.Group style={{ marginLeft: 30 }}>
                                     <Form.Label >Upload Course Image</Form.Label>
-                                    <Form.File id="file" name="file"/>
+                                    <Form.File id="file" name="file" />
                                 </Form.Group>
                             </Form>
                         </div>
@@ -83,13 +94,13 @@ function CreateCourse() {
                         formData.append("toy_type", state.toy_type);
                         formData.append("des", state.des);
                         formData.append("id", localStorage.getItem('user_id'));
-                        axios.post(url+'/api'+window.location.pathname, formData, {
+                        axios.post(url + '/api' + window.location.pathname, formData, {
                             headers: {
                                 'Content-Type': 'multipart/form-data'
                             }
                         }).then(res => {
                             console.log(res.data)
-                            window.location.pathname = "/CreateContent/"+res.data.id 
+                            window.location.pathname = "/CreateContent/" + res.data.id
                         })
                     }
                     }>Confirm</Button>

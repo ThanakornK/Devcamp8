@@ -6,7 +6,7 @@ export class FooterEnrolled extends Component {
     render() {
         return (
             <div>
-                <Navbar sticky="bottom" expand="lg">
+                <Navbar fixed="bottom" expand="lg">
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav >
                             <ModalQuestion />

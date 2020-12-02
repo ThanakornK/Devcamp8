@@ -1,24 +1,21 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react'
 import { Modal, Button, InputGroup, FormControl, Form } from 'react-bootstrap';
-import AlertSendQ from './AlertSendQ';
 
-import './../styles/ModalQuestion.css';
-
-function ModalQuestion() {
+function ModalEditAcc() {
     const [show, setShowModal] = useState(false);
 
-    function handleSendModal(){
+    function handleSendModal() {
         setShowModal(false);
-        alert("Your reply has been sent successfully!");
+        alert("Your account has been changed successfully!");
 
     }
     const handleCloseModal = () => setShowModal(false);
     const handleShowModal = () => setShowModal(true);
-    
+
     return (
-        <>
-            <Button variant="primary" onClick={handleShowModal}>
-                Reply
+        <div>
+            <Button variant="primary" onClick={handleShowModal} style={{ paddingTop: "10px" }}>
+                Change
             </Button>
 
             <Modal
@@ -27,19 +24,14 @@ function ModalQuestion() {
                 onHide={handleSendModal}
                 backdrop="static"
                 keyboard={false}
-                size="lg"
-            >
+                size="lg">
                 <Modal.Header>
-                    <Modal.Title style={{marginLeft:250}}>Reply</Modal.Title>
+                    <Modal.Title style={{ marginLeft: 250 }}>Change Account</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Control style={{marginLeft:"10%",width:600}} placeholder="Subject"/>
-                        </Form.Group>
-                        
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Control as="textarea" style={{marginLeft:"10%"}} rows={3} placeholder="write something!"/>
+                            <Form.Control style={{ marginLeft: "10%", width: 600 }} placeholder="Account number" />
                         </Form.Group>
                     </Form>
                 </Modal.Body>
@@ -50,8 +42,10 @@ function ModalQuestion() {
                     <Button onClick={handleSendModal}> Send </Button>
                 </Modal.Footer>
             </Modal>
-        </>
-    );
+
+
+        </div >
+    )
 }
 
-export default ModalQuestion
+export default ModalEditAcc

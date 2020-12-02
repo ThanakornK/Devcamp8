@@ -60,9 +60,9 @@ export default class UserProfile extends React.Component {
                 </Card>
           )}
         </div>
-        <div className="buttonContainer">
-          <a style={{marginRight:15}} class="btn btn-primary btn-lg float-right" href={"/editProfile/"+localStorage.getItem('user_id')} role="button">Edit Profile</a>
-          <a class="btn btn-primary btn-lg float-right" href={"/addCollection/"+localStorage.getItem('user_id')} role="button">Add Collection</a>
+        <div className="buttonContainer" style={{paddingBottom: "50px", paddingTop:"30px"}}>
+          <a style={{marginRight:15}} class="btn btn-primary btn-lg float-right" href="/editProfile" role="button">Edit Profile</a>
+          <a class="btn btn-primary btn-lg float-right" href="/addCollection/1" role="button">Add Collection</a>
         </div>
       </div>
     )

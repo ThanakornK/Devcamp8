@@ -45,7 +45,7 @@ function SelectEditContent() {
     }
     return (
         <div style={{ height: "100vh" }}>
-            <h2 className="center">Edit Content</h2>
+            <h2 className="center">Edit Step</h2>
 
             <Container >
                 <Row>

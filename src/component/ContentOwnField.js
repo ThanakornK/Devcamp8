@@ -13,7 +13,7 @@ function ContentOwnField() {
 
     useEffect(() => {
         console.log(state)
-        axios.get(url + `/api/courses/getByOwnerID/`+localStorage.getItem('user_id'))
+        axios.get(url + `/api/courses/getByOwnerID/` + localStorage.getItem('user_id'))
             .then(res => {
                 const course = res.data;
                 console.log(course);
@@ -32,21 +32,27 @@ function ContentOwnField() {
                     return (
                         <ListGroupItem className="list">
                             <div style={{ display: "flex", flexDirection: "row" }}>
-                                    <div><img style={{ width: "100px", height: "100px"}} src={url+val.img} /></div>
-                                    <div style={{ paddingLeft:"10px" }}>
+                                <div><img style={{ width: "100px", height: "100px" }} src={url + val.img} /></div>
+                                <div style={{ paddingLeft: "10px" }}>
 
-                                        <div><h4>{val.c_name}</h4></div>
+                                    <div><h4>{val.c_name}</h4></div>
 
-                                        <Container className="DetailCourse" fluid="true">
-                                            <div style={{ paddingRight: "10px" }}>Type: {val.type} </div>
-                                            <div style={{ paddingRight: "20px" }}>Toy type: {val.toy_type}</div>
-                                            <div style={{ paddingRight: "5px" }}>by {val.owner}</div>
-                                        </Container>
-                                        <div style={{ fontSize: "18px" }}>price: {val.price} baht</div>
-                                    </div>
+                                    <Container className="DetailCourse" fluid="true">
+                                        <div style={{ paddingRight: "10px" }}>Type: {val.type} </div>
+                                        <div style={{ paddingRight: "20px" }}>Toy type: {val.toy_type}</div>
+                                        <div style={{ paddingRight: "5px" }}>by {val.owner}</div>
+                                    </Container>
+                                    <div style={{ fontSize: "18px" }}>price: {val.price} baht</div>
                                 </div>
+                            </div>
+                            {/* </div> */}
+                            <div style={{ display: "flex", flexDirection: "row", padding: "5px" }}>
+                                <div style={{ paddingRight: "10px" }}><Button onClick={{}}>Edit Course</Button></div>
+                                <div><Button onClick={{}}>Edit Step</Button></div>
+                            </div>
 
-                            </ListGroupItem>
+
+                        </ListGroupItem>
                     )
                 })}
             </ListGroup>

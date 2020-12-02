@@ -46,7 +46,7 @@ function CreateContent() {
     }
     return (
         <div style={{ height: "100vh" }}>
-            <h2 className="center">Edit Content</h2>
+            <h2 className="center">Create Step</h2>
 
             <Container >
                 <Row>
