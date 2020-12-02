@@ -5,17 +5,17 @@ import userData from '../testData/userdata'
 
 export const OwnBarData = [
     {
-        title:"สร้าง",
+        title:"Create Course",
         icon:<IoIcons.IoAddCircle />,
         path:"/createCourse/"+userData
     },
     {
-        title:"กล่องคำถาม",
+        title:"Inbox",
         icon:<RiIcons.RiInboxArchiveFill />,
         path:"/inbox"
     },
     {
-        title:"บัญชี",
+        title:"Account",
         icon:<RiIcons.RiMoneyDollarCircleFill />,
         path:"/account"
     }

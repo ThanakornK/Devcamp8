@@ -9,7 +9,7 @@ function EnrollSideBar() {
                 <li className="row"
                 // onClick={() => { window.location.pathname = "/:userId/inbox"}}>
                 onClick={() => { window.location.pathname = "/messageBox"}}>
-                    <div id="icon"><RiIcons.RiInboxArchiveFill /></div> <div id="title">กล่องข้อความ</div>
+                    <div id="icon"><RiIcons.RiInboxArchiveFill /></div> <div id="title">Inbox</div>
                 </li>
             </ul>
         </div>
