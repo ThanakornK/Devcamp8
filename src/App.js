@@ -9,7 +9,7 @@ import MainLib from './pages/MainLib';
 import MainStore from './pages/MainStore';
 import MainHelp from './pages/MainHelp';
 import ContentCourse from './pages/ContentCourse';
-import Login from './pages/Login';
+import Login from './pages/MainLogin';
 import Register from './pages/Register';
 import UserProfile from './pages/UserProfile';
 import CreateCourse from './pages/CreateCourse';

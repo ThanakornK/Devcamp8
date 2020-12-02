@@ -19,7 +19,7 @@ export default class MainStore extends React.Component {
     componentDidMount() {
         // console.log(axios.get(`http://8cf0d250a525.ngrok.io/api/courses/1`).data)
         // console.log(userData)
-        axios.get(url+`/api/courses/getToStore/`+userData)
+        axios.get(url+`/api/courses/getToStore/`+localStorage.getItem('user_id'))
             .then(res => {
                 const course = res.data;
                 console.log(course) ;

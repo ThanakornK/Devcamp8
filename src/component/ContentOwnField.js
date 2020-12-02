@@ -13,7 +13,7 @@ function ContentOwnField() {
 
     useEffect(() => {
         console.log(state)
-        axios.get(url + `/api/courses/getByOwnerID/`+userData)
+        axios.get(url + `/api/courses/getByOwnerID/`+localStorage.getItem('user_id'))
             .then(res => {
                 const course = res.data;
                 console.log(course);
