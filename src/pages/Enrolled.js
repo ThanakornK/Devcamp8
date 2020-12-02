@@ -7,6 +7,7 @@ import './../styles/CourseList.css';
 import axios from 'axios'
 import userData from '../testData/userdata'
 import url from '../service/apiService'
+import EnrollSideBar from './../component/EnrollSideBar';
 
 export default class Enrolled extends React.Component {
 
@@ -32,7 +33,8 @@ export default class Enrolled extends React.Component {
     render() {
         // const course = {} ;
         return (
-            <div style={{ padding: "10px" }}>
+            <div style={{display:'flex',flexDirection:"row"}} fluid="true">
+                <div style={{ padding: "10px", width: "100%"}}>
                 <ListGroup className="CourseList">
                     {this.state.course.map(val =>
                         <ListGroupItem className="list" onClick={() => { window.location.pathname = '/library/'+val.id }}>
@@ -48,6 +50,11 @@ export default class Enrolled extends React.Component {
                     )}
                 </ListGroup>
             </div>
+            <div>
+                <EnrollSideBar />
+            </div>
+            </div>
+            
 
             // <div style={{ padding: "10px" }}>
             //     <ListGroup className="CourseList">

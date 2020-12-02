@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { InputGroup, FormControl, Button, Container } from 'react-bootstrap';
+import React from 'react';
+import { InputGroup, FormControl, Button, Container, Form } from 'react-bootstrap';
 import './../styles/CreateCourse.css';
 import url from '../service/apiService'
 import axios from 'axios';
@@ -45,10 +45,12 @@ function EditCourse() {
                     <InputGroup className="FormInput">
                         <FormControl placeholder="Description" as="textarea" style={{ marginLeft: "0%" }} name='des' id="des" value={state.des} onChange={handleChange} />
                     </InputGroup>
-                    <label for="profileImg">Upload Content Picture</label>
-                    <br />
-                    <input type="file" class="form-control-file" id="file" name="file" className="uploadProfileCenter" />
-                    <br/>
+                    <Form>
+                        <Form.Group style={{marginLeft:50}}> 
+                            <Form.Label>Upload Image</Form.Label>
+                            <Form.File id="newCourseImg"/>
+                        </Form.Group>
+                    </Form>
                 </div>
                 <br/>
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }} >
