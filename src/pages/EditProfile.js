@@ -28,7 +28,7 @@ export default class EditProfile extends Component {
                     </InputGroup>
                 </Form>
 
-                <a class="btn btn-primary btn-lg float-right" href={'/profile/'+userData} role="button"
+                <a class="btn btn-primary btn-lg float-right" href={'/profile/'+localStorage.getItem('user_id')} role="button"
                     onClick={() => {
                         var formData = new FormData();
                         var imagefile = document.querySelector('#file');
