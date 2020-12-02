@@ -13,8 +13,8 @@ export default class MainLogin extends Component {
     render() {
         return (
             <div style={{height:"100vh"}}>
-                <Container style={{ display:"flex", flexDirection:"row", justifyContent:"space-around", marginLeft:"12%", paddingTop:"2%"}}>
-                    <div style={{paddingRight:"20px"}}>
+                <Container style={{ display:"flex", flexDirection:"row", justifyContent:"space-around", marginLeft:"20%", paddingTop:"2%"}}>
+                    <div style={{paddingRight:"30px"}}>
                         <LoginForm />
                     </div>
                     <div style={{padding:"20px"}}>
