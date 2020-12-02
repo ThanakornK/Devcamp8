@@ -15,7 +15,7 @@ function CreateContentForm() {
             <InputGroup className="FormInput" className="FormInput" >
                 <FormControl placeholder="Content" as="textarea" style={{ marginLeft: "0" }} />
             </InputGroup>
-            <label for="profileImg">Upload Content Picture</label>
+            <label for="profileImg">Upload Step Picture</label>
             <br />
             <input type="file" class="form-control-file" id="profileImg" className="uploadProfileCenter" />
         </div >
