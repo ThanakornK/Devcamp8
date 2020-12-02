@@ -64,10 +64,10 @@ class App extends Component {
                 <Route path='/profile/:userId' component={UserProfile}/>
                 <Route path='/editProfile/:userId' component={EditProfile}/>
                 <Route exact path='/' component={MainLib} />
-                <Route path='/CreateCourse' component={CreateCourse} />
+                <Route path='/CreateCourse/:userId' component={CreateCourse} />
                 <Route path='/CreateContent' component={CreateContent} />
-                <Route path='/editContent' component={EditContent} />
-                <Route path='/editSelectContent' component={SelectEditContent} />
+                <Route path='/editContent/:courseId' component={EditContent} />
+                <Route path='/editSelectContent/:contentId' component={SelectEditContent} />
                 <Route path='/contact' component={Contact}/>
                 <Route path='/store/preview/:courseId' component={PreviewCourse} />
               </Switch>
