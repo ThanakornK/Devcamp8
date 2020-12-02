@@ -99,8 +99,9 @@ class App extends Component {
             </Col>
           </Row>
         </Container>
-        <FooterApp />
+       
       </BrowserRouter>
+      
     );
   }
 }
