@@ -38,14 +38,16 @@ export default class UserProfile extends React.Component {
     return (
       <div>
         <div className="profileHeader">Profile</div>
-        <div className="profileImgHolder">
-          <img src={url + this.state.profile.img_pro} className="profileImg" style={{ width: "500px", height: "500px", }}></img>
+        <div>
+          <div  className="profileImgHolder">
+          <img src={url + this.state.profile.img_pro} className="profileImg" style={{marginLeft:"15%"}}></img>
+          </div>
         </div>
         <div className="userName">Username: {this.state.profile.username}</div>
         <div className="description">{this.state.profile.bio}</div>
         <div className="collectionHeader">My Collection</div>
 
-        <Row className="collectionContainer">
+        <div className="collectionContainer">
           {this.state.img.map(val =>
                 <Card className="imgCard">
                   <Card.Img className="imageContent" variant="top" src={url + val.img} ></Card.Img>
@@ -57,11 +59,11 @@ export default class UserProfile extends React.Component {
                   </Card.Body> */}
                 </Card>
           )}
-        </Row>
-        <Row className="buttonContainer">
+        </div>
+        <div className="buttonContainer">
           <a style={{marginRight:15}} class="btn btn-primary btn-lg float-right" href="/editProfile" role="button">Edit Profile</a>
           <a class="btn btn-primary btn-lg float-right" href="/addCollection/1" role="button">Add Collection</a>
-        </Row>
+        </div>
       </div>
     )
   }

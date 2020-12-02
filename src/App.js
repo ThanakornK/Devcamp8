@@ -25,6 +25,7 @@ import BuyCourse from './pages/BuyCourse';
 import InformPayment from './pages/InformPayment';
 import Inbox from './pages/Inbox';
 import MailReader from './pages/MailReader';
+import FooterApp from './component/FooterApp';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -96,8 +97,7 @@ class App extends Component {
             </Col>
           </Row>
         </Container>
-
-
+        <FooterApp />
       </BrowserRouter>
     );
   }

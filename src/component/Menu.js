@@ -9,7 +9,7 @@ export default class Menu extends React.Component {
     if(localStorage.getItem('isLogin') == 1){
       return (
         <Navbar style={{ backgroundColor: "#FFD800" }} expand="lg">
-          <Navbar.Brand href="/library">
+          <Navbar.Brand >
             <img alt="" src={Logo} width="150" height="50" className="d-inline align-top" />
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">

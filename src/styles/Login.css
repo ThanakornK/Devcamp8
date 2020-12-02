@@ -14,6 +14,12 @@
 
 .loginButton{
     display: flex;
-    margin-left: 42%;
+    margin-left: 60%;
+   
     font-weight: bold;
+}
+
+.vl {
+    border-left: 6px solid #FFD800;
+    height: 700px;
 }
