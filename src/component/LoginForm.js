@@ -41,6 +41,7 @@ function LoginForm() {
                         else {
                             localStorage.setItem('isLogin', 1);
                             localStorage.setItem('user_id', res.data.id);
+                            localStorage.setItem('username', res.data.name)
                             window.location.pathname = '/library';
                         }
 

@@ -37,13 +37,13 @@ export default class Register extends React.Component {
                         }
                     }).then(res => {
                         console.log(res.data)
-                        if (res.data == 'fail') {
+                        if (res.data === 'fail') {
                             // send error message
                         }
                         else {
                             // localStorage.setItem('isLogin', 1);
                             // localStorage.setItem('user_id', res.data.id);
-                            window.location.pathname = '/login';
+                            // window.location.pathname = '/login';
                         }
 
                     })

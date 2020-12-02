@@ -27,6 +27,8 @@ import Inbox from './pages/Inbox';
 import MailReader from './pages/MailReader';
 import FooterApp from './component/FooterApp';
 import AccountUser from './pages/AccountUser';
+import MessageBox from './pages/MessageBox';
+import MessageReader from './pages/MessageReader';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -95,6 +97,8 @@ class App extends Component {
                 <Route path='/inbox' component={Inbox}/>
                 <Route path='/mailReader' component={MailReader}/>
                 <Route path='/account' component={AccountUser} />
+                <Route path='/messageBox' component={MessageBox}/>
+                <Route path='/messageReader' component={MessageReader}/>
               </Switch>
             </Col>
           </Row>
