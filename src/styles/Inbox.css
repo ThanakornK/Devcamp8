@@ -1,0 +1,20 @@
+.CourseList .list:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+.list{
+    margin-left: 0;
+    font-size: large;
+}
+
+.DetailCourse {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+.mailContainer{
+    margin-left: 40px;
+    margin-top: 20px;
+}
