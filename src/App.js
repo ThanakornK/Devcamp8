@@ -21,6 +21,8 @@ import SelectEditContent from './pages/SelectEditContent';
 import PreviewCourse from './pages/PreviewCourse';
 import EditCourse from './pages/EditCourse';
 import AddCollection from './pages/AddCollection';
+import BuyCourse from './pages/BuyCourse';
+import InformPayment from './pages/InformPayment';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -73,7 +75,9 @@ class App extends Component {
                 <Route path='/editSelectContent' component={SelectEditContent} />
                 <Route path='/contact' component={Contact}/>
                 <Route path='/store/preview/:courseId' component={PreviewCourse} />
-                <Route path='/addCollection/1' component={AddCollection}/>
+                <Route path='/addCollection/1' component={AddCollection} />
+                <Route path='/store/buy/:CourseID' component={BuyCourse} />
+                <Route path='/store/informpayment/:CourseID' component={InformPayment} />
               </Switch>
             </Col>
           </Row>
