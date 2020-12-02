@@ -58,9 +58,6 @@ function SelectEditContent() {
                             <InputGroup className="FormInput" className="FormInput" >
                                 <FormControl placeholder="Content" as="textarea" id="content" style={{ marginLeft: "0" }} name='content' value={state.content} onChange={handleChange} />
                             </InputGroup>
-                            {/* <InputGroup className="FormInput" className="FormInput" >
-                                <FormControl placeholder="Content" as="textarea" style={{ marginLeft: "0" }} name='title' value={state.title} onChange={handleChange}/>
-                            </InputGroup> */}
                             <label for="profileImg">Upload Content Picture</label>
                             <br />
                             <input type="file" class="form-control-file" id="file" name="file" className="uploadProfileCenter" />

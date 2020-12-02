@@ -84,9 +84,9 @@ class App extends Component {
                 <Route path='/CreateContent' component={CreateContent} />
                 <Route path='/editContent/:courseId' component={EditContent} />
                 <Route path='/editSelectContent/:contentId' component={SelectEditContent} />
-                <Route path='/editContent' component={EditContent} />
-                <Route path='/editCourse' component={EditCourse} />
-                <Route path='/editSelectContent' component={SelectEditContent} />
+                {/* <Route path='/editContent' component={EditContent} /> */}
+                <Route path='/editCourse/:courseId' component={EditCourse} />
+                {/* <Route path='/editSelectContent' component={SelectEditContent} /> */}
                 <Route path='/contact' component={Contact}/>
                 <Route path='/store/preview/:courseId' component={PreviewCourse} />
                 <Route path='/addCollection/1' component={AddCollection}/>

@@ -37,13 +37,13 @@ function ContentOwnField() {
                                 <div style={{ paddingRight: "20px" }}>Toy type: {val.toy_type}</div>
                                 <div style={{ paddingRight: "5px" }}>by {val.owner}</div>
                             </Container>
-                            <div style={{ fontSize: "18px" }}>price: {val.cost} baht</div>
+                            <div style={{ fontSize: "18px" }}>price: {val.price} baht</div>
                             <div style={{ display:"flex" , flexDirection:"row"}} >
                                 <div style={{paddingRight:"10px"}}>
-                                    <Button onClick={() => { window.location.pathname = "/editCourse"; }}>Edit Course</Button>
+                                    <Button onClick={() => { window.location.pathname = "/editCourse/"+val.id; }}>Edit Course</Button>
                                 </div>
                                 <div>
-                                    <Button onClick={() => { window.location.pathname = "/editContent"; }}>Edit Content</Button>
+                                    <Button onClick={() => { window.location.pathname = "/editContent/"+val.id; }}>Edit Content</Button>
                                 </div>
 
                             </div>
