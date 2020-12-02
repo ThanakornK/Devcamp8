@@ -1,11 +1,19 @@
 .form{
     align-items: center;
     font-size: large;
-    padding-left: 500px;
-    padding-top: 20px;
+    padding-left: 36%;
+    padding-top: 2%;
     align-content: center;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 .form-control{
     width: 200px;
+}
+
+.loginButton{
+    display: flex;
+    margin-left: 42%;
+    font-weight: bold;
 }
