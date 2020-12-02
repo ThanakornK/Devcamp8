@@ -47,8 +47,12 @@ function ContentOwnField() {
                             </div>
                             {/* </div> */}
                             <div style={{ display: "flex", flexDirection: "row", padding: "5px" }}>
-                                <div style={{ paddingRight: "10px" }}><Button onClick={{}}>Edit Course</Button></div>
-                                <div><Button onClick={{}}>Edit Step</Button></div>
+                                <div style={{ paddingRight: "10px" }}><Button onClick={ () => {
+                                    window.location.pathname = '/editCourse/'+val.id
+                                }}>Edit Course</Button></div>
+                                <div><Button onClick={ () => {
+                                    window.location.pathname = '/editContent/'+val.id;
+                                }}>Edit Step</Button></div>
                             </div>
 
 

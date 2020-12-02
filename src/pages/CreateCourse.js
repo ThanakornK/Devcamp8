@@ -55,7 +55,7 @@ function CreateCourse() {
                                 <Form.Label>Type</Form.Label>
                                 </div>
                                 <div>
-                                <Form.Control as="select" placeholder="Type">
+                                <Form.Control as="select" placeholder="Type" name='type' value={state.type} onChange={handleChange} id="type">
                                     <option>Painting</option>
                                     <option>Sculpturing</option>
                                     <option>Modify part</option>

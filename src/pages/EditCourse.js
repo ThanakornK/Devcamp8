@@ -78,7 +78,7 @@ function EditCourse() {
                             }).then(res => {
                                 console.log(res.data)
                             })
-                            // window.location.pathname = "/editCourse"
+                            window.location.pathname = "/library"
                         }}>Confirm edit</Button>
 
                     </div>

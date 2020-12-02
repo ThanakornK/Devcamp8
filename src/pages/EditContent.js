@@ -67,7 +67,7 @@ function EditContent() {
                 </Row>  
                 <Row style={{ flexDirection: "column" }}>
                     <div style={{alignSelf:"center", paddingBottom:"10px"}}>
-                        <Button onClick={() => {window.location.pathname = "/CreateContent"}}>Add Content</Button>
+                        <Button onClick={() => {window.location.pathname = "/CreateContent/"+course.id}}>Add Content</Button>
                     </div>
                 </Row>
                     
