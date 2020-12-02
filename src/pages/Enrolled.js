@@ -39,7 +39,7 @@ export default class Enrolled extends React.Component {
                         {this.state.course.map(val =>
                             <ListGroupItem className="list" onClick={() => { window.location.pathname = '/library/' + val.id }}>
                                 <div style={{ display: "flex", flexDirection: "row" }}>
-                                    <div><img style={{ width: "100px", height: "100px"}} src='/images/testPreview.jpg' /></div>
+                                    <div><img style={{ width: "100px", height: "100px"}} src={url+val.img} /></div>
                                     <div style={{ paddingLeft:"10px" }}>
 
                                         <div><h4>{val.c_name}</h4></div>

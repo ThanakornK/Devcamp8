@@ -73,7 +73,7 @@ function CreateCourse() {
                 </Row>
                 <Row style={{ display: "flex", justifyContent: "center" }}>
                     <Button className="center" onClick={() => {
-                        console.log(state)
+                        // console.log(state)
                         var formData = new FormData();
                         var imagefile = document.querySelector('#file');
                         formData.append("image", imagefile.files[0]);

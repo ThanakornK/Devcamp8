@@ -32,7 +32,7 @@ function ContentOwnField() {
                     return (
                         <ListGroupItem className="list">
                             <div style={{ display: "flex", flexDirection: "row" }}>
-                                    <div><img style={{ width: "100px", height: "100px"}} src='/images/testPreview.jpg' /></div>
+                                    <div><img style={{ width: "100px", height: "100px"}} src={url+val.img} /></div>
                                     <div style={{ paddingLeft:"10px" }}>
 
                                         <div><h4>{val.c_name}</h4></div>

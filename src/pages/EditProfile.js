@@ -11,7 +11,7 @@ export default class EditProfile extends Component {
             <div>
                 <div className="profileHeader">Edit Profile</div>
                 <div className="profileImgHolder">
-                    <img src="./images/guest_profile.png" className="profileImg" />
+                    {/* <img src="./images/guest_profile.png" className="profileImg" /> */}
                 </div>
 
                 <Form>
@@ -21,14 +21,14 @@ export default class EditProfile extends Component {
                         <input type="file" id="file" name="file" />
                     </Form.Group>
 
-                    <Form.Label className="bioHead">Username: PondTHElnwZAAA</Form.Label>
+                    <Form.Label className="bioHead">Username: {localStorage.getItem('username')}</Form.Label>
 
                     <InputGroup className="FormInput">
                         <FormControl as="textarea" placeholder="Enter Your Description" col="50" style={{ marginLeft: 0 }} id="bio"/>
                     </InputGroup>
                 </Form>
 
-                <a class="btn btn-primary btn-lg float-right" href={'/profile/'+localStorage.getItem('user_id')} role="button"
+                <a class="btn btn-primary btn-lg float-right" href={'/profile/'+localStorage.getItem('user_id')}  role="button"
                     onClick={() => {
                         var formData = new FormData();
                         var imagefile = document.querySelector('#file');
@@ -42,6 +42,7 @@ export default class EditProfile extends Component {
                         }).then(res => {
                             console.log(res.data)
                         })
+                        // href={'/profile/'+localStorage.getItem('user_id')}
                         // console.log(temp)
                     }}>Confirm</a>
             </div>
