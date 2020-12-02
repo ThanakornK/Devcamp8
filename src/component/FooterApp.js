@@ -7,7 +7,7 @@ function FooterApp() {
     return (
         <div>
             <Navbar fixed="bottom" style={{backgroundColor:"#FFD800"}}>
-                <Navbar.Brand href="/library">
+                <Navbar.Brand >
                     <img alt="" src={Logo} width="150" height="50" className="d-inline align-top" />
                 </Navbar.Brand>
                 <div>
