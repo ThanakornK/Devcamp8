@@ -22,7 +22,7 @@ function CreateCourseForm() {
             </InputGroup>
             <Form>
                 <Form.Group style={{marginLeft:300}}> 
-                    <Form.Label >Upload Course Image </Form.Label>
+                    <Form.Label >Upload Course Image</Form.Label>
                     <Form.File id="courseImg"/>
                 </Form.Group>
             </Form>
