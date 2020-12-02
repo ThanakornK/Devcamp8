@@ -45,7 +45,7 @@ function PreviewForm() {
                     </div>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", paddingTop: "10px" }}>
-                    <Button onClick={() => { window.location.pathname = "/store/buy/:CourseId" }}>Buy Course</Button><Button>Contact Author</Button>
+                    <Button onClick={() => { window.location.pathname = "/store/buy/"+course.id }}>Buy Course</Button><Button>Contact Author</Button>
                 </div>
             </Container>
         </div>

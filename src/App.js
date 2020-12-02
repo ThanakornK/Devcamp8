@@ -91,7 +91,7 @@ class App extends Component {
                 <Route path='/contact' component={Contact}/>
                 <Route path='/store/preview/:courseId' component={PreviewCourse} />
                 <Route path='/addCollection/1' component={AddCollection} />
-                <Route path='/store/buy/:CourseID' component={BuyCourse} />
+                <Route path='/store/buy/:courseID' component={BuyCourse} />
                 <Route path='/store/informpayment/:CourseID' component={InformPayment} />
                 <Route path='/inbox' component={Inbox}/>
                 <Route path='/mailReader' component={MailReader}/>
@@ -101,7 +101,7 @@ class App extends Component {
             </Col>
           </Row>
         </Container>
-        <FooterApp />
+        {/* <FooterApp /> */}
       </BrowserRouter>
     );
   }
