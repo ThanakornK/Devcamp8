@@ -4,7 +4,7 @@ import './../styles/Inbox.css';
 
 export default function Inbox() {
     return (
-        <div>
+        <div  style={{ height:"100vh" }} >
             <ListGroup className="mailContainer">
                 <ListGroupItem className="CourseList" onClick={() => { window.location.pathname = '/mailReader' }}>
                     <Container className="list">

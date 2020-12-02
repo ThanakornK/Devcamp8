@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { InputGroup, FormControl, Button, Container, Form } from 'react-bootstrap';
 import './../styles/CreateCourse.css';
 import url from '../service/apiService'
@@ -48,7 +48,7 @@ function EditCourse() {
                     <Form>
                         <Form.Group style={{marginLeft:50}}> 
                             <Form.Label>Upload Image</Form.Label>
-                            <Form.File id="newCourseImg"/>
+                            <Form.File id="file" name="file"/>
                         </Form.Group>
                     </Form>
                 </div>
