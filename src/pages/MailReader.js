@@ -6,7 +6,7 @@ import './../styles/MailReader.css';
 
 export default function Inbox() {
     return (
-        <div>
+        <div style={{ height:"100vh" }}>
             <Card className="mailCard" style={{ width: '50rem' }}>
                 <Card.Header className="title">อยากสอบถามเกี่ยวกับการเริ่มต้นลงสีโมเดล</Card.Header>
                 <ListGroup variant="flush">
