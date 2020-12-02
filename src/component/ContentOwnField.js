@@ -31,7 +31,7 @@ function ContentOwnField() {
                 {state.course.map((val, key) => {
                     return (
                         <ListGroupItem className="list">
-                            <div><h4>{val.title}</h4></div>
+                            <div><h4>{val.c_name}</h4></div>
                             <Container className="DetailCourse" fluid="true">
                                 <div style={{ paddingRight: "10px" }}>Type: {val.type} </div>
                                 <div style={{ paddingRight: "20px" }}>Toy type: {val.toy_type}</div>

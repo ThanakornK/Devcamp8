@@ -12,7 +12,8 @@ function CreateCourse() {
         title: '',
         toy_type: '',
         price:'',
-        type:''
+        type:'',
+        des: ''
     })
 
     // useEffect(() => {
@@ -59,12 +60,12 @@ function CreateCourse() {
                                 <FormControl placeholder="Price" name='price' value={state.price} onChange={handleChange} id="price" />
                             </InputGroup>
                             <InputGroup className="FormInput">
-                                <FormControl placeholder="Description"  as="textarea" style={{marginLeft:"0%"}}/>
+                                <FormControl placeholder="Description"  as="textarea" style={{marginLeft:"0%"}} name='des' value={state.des} onChange={handleChange} id="des"/>
                             </InputGroup>
                             <Form>
                                 <Form.Group style={{marginLeft:30}}> 
                                     <Form.Label >Upload Course Image</Form.Label>
-                                    <Form.File id="courseImg"/>
+                                    <Form.File id="file" name="file"/>
                                 </Form.Group>
                             </Form>
                         </div>
@@ -73,14 +74,23 @@ function CreateCourse() {
                 <Row style={{ display: "flex", justifyContent: "center" }}>
                     <Button className="center" onClick={() => {
                         console.log(state)
-                        axios.post(url+'/api'+window.location.pathname, state, {
-                            // headers: {
-                            //     'Content-Type': 'multipart/form-data'
-                            // }
+                        var formData = new FormData();
+                        var imagefile = document.querySelector('#file');
+                        formData.append("image", imagefile.files[0]);
+                        formData.append("type", state.type);
+                        formData.append("title", state.title);
+                        formData.append("price", state.price);
+                        formData.append("toy_type", state.toy_type);
+                        formData.append("des", state.des);
+                        formData.append("id", localStorage.getItem('user_id'));
+                        axios.post(url+'/api'+window.location.pathname, formData, {
+                            headers: {
+                                'Content-Type': 'multipart/form-data'
+                            }
                         }).then(res => {
                             console.log(res.data)
+                            window.location.pathname = "/CreateContent/"+res.data.id 
                         })
-                        // window.location.pathname = "/CreateContent"
                     }
                     }>Confirm</Button>
                 </Row>
