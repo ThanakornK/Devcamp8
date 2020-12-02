@@ -31,23 +31,22 @@ function ContentOwnField() {
                 {state.course.map((val, key) => {
                     return (
                         <ListGroupItem className="list">
-                            <div><h4>{val.c_name}</h4></div>
-                            <Container className="DetailCourse" fluid="true">
-                                <div style={{ paddingRight: "10px" }}>Type: {val.type} </div>
-                                <div style={{ paddingRight: "20px" }}>Toy type: {val.toy_type}</div>
-                                <div style={{ paddingRight: "5px" }}>by {val.owner}</div>
-                            </Container>
-                            <div style={{ fontSize: "18px" }}>price: {val.price} baht</div>
-                            <div style={{ display:"flex" , flexDirection:"row"}} >
-                                <div style={{paddingRight:"10px"}}>
-                                    <Button onClick={() => { window.location.pathname = "/editCourse/"+val.id; }}>Edit Course</Button>
-                                </div>
-                                <div>
-                                    <Button onClick={() => { window.location.pathname = "/editContent/"+val.id; }}>Edit Content</Button>
+                            <div style={{ display: "flex", flexDirection: "row" }}>
+                                    <div><img style={{ width: "100px", height: "100px"}} src='/images/testPreview.jpg' /></div>
+                                    <div style={{ paddingLeft:"10px" }}>
+
+                                        <div><h4>{val.c_name}</h4></div>
+
+                                        <Container className="DetailCourse" fluid="true">
+                                            <div style={{ paddingRight: "10px" }}>Type: {val.type} </div>
+                                            <div style={{ paddingRight: "20px" }}>Toy type: {val.toy_type}</div>
+                                            <div style={{ paddingRight: "5px" }}>by {val.owner}</div>
+                                        </Container>
+                                        <div style={{ fontSize: "18px" }}>price: {val.price} baht</div>
+                                    </div>
                                 </div>
 
-                            </div>
-                        </ListGroupItem>
+                            </ListGroupItem>
                     )
                 })}
             </ListGroup>

@@ -13,5 +13,10 @@ export const OwnBarData = [
         title:"กล่องคำถาม",
         icon:<RiIcons.RiInboxArchiveFill />,
         path:"/inbox"
+    },
+    {
+        title:"บัญชี",
+        icon:<RiIcons.RiMoneyDollarCircleFill />,
+        path:"/account"
     }
 ]

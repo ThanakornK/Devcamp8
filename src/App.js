@@ -26,6 +26,7 @@ import InformPayment from './pages/InformPayment';
 import Inbox from './pages/Inbox';
 import MailReader from './pages/MailReader';
 import FooterApp from './component/FooterApp';
+import AccountUser from './pages/AccountUser';
 import MessageBox from './pages/MessageBox';
 import MessageReader from './pages/MessageReader';
 
@@ -95,14 +96,16 @@ class App extends Component {
                 <Route path='/store/informpayment/:CourseID' component={InformPayment} />
                 <Route path='/inbox' component={Inbox}/>
                 <Route path='/mailReader' component={MailReader}/>
+                <Route path='/account' component={AccountUser} />
                 <Route path='/messageBox' component={MessageBox}/>
                 <Route path='/messageReader' component={MessageReader}/>
               </Switch>
             </Col>
           </Row>
         </Container>
-        {/* <FooterApp /> */}
+       
       </BrowserRouter>
+      
     );
   }
 }

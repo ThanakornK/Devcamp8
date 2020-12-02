@@ -4,11 +4,13 @@ import { OwnData } from './../component/OwnData';
 import OwnSideBar from './../component/OwnSideBar';
 import ContentOwnField from './../component/ContentOwnField';
 import { Height } from '@material-ui/icons';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 export default class Owned extends React.Component {
     render() {
         return (
             <div style={{ display: "flex", flexDirection: "row", height: "95vh" }} fluid="true">
+                
                 <ContentOwnField />
                 <div>
                     <OwnSideBar />
