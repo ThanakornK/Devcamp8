@@ -30,7 +30,7 @@ export default class MainStore extends React.Component {
 
     render () {
         return (
-            <div style={{ padding: "10px" }}>
+            <div style={{ padding: "10px", height:"100vh" }}>
             <SearchBar/>
 
                 <ListGroup className="CourseList">
