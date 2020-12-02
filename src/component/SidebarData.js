@@ -15,12 +15,6 @@ export const SidebarData = [
         icon: <AiIcons.AiOutlineShoppingCart/>,
         path: '/store'
     },
-
-    {
-        title: "Contact us",
-        icon: <RiIcons.RiContactsLine/>,
-        path: '/help'
-    },
 ]
 
 
