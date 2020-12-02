@@ -80,7 +80,7 @@ function CreateCourse() {
                         }).then(res => {
                             console.log(res.data)
                         })
-                        // window.location.pathname = "/CreateContent"
+                        window.location.pathname = "/CreateContent"
                     }
                     }>Confirm</Button>
                 </Row>

@@ -37,7 +37,7 @@ function EditContent() {
 
     return (
         <div >
-            <Container >
+            <Container>
                 <Row style={{ flexDirection: "column" }}>
                     <h2 style={{ alignSelf: "center", paddingTop: "10px" }}>{course.c_name}</h2>
                     <h3>by: {course.c_owner}</h3>
@@ -64,8 +64,16 @@ function EditContent() {
                             </Col>
                         )
                     })}
+                </Row>  
+                <Row style={{ flexDirection: "column" }}>
+                    <div style={{alignSelf:"center", paddingBottom:"10px"}}>
+                        <Button onClick={() => {window.location.pathname = "/CreateContent"}}>Add Content</Button>
+                    </div>
                 </Row>
+                    
+                
             </Container>
+                    
         </div>
     )
 }
