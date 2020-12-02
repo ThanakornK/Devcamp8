@@ -26,6 +26,8 @@ import InformPayment from './pages/InformPayment';
 import Inbox from './pages/Inbox';
 import MailReader from './pages/MailReader';
 import FooterApp from './component/FooterApp';
+import MessageBox from './pages/MessageBox';
+import MessageReader from './pages/MessageReader';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -93,6 +95,8 @@ class App extends Component {
                 <Route path='/store/informpayment/:CourseID' component={InformPayment} />
                 <Route path='/inbox' component={Inbox}/>
                 <Route path='/mailReader' component={MailReader}/>
+                <Route path='/messageBox' component={MessageBox}/>
+                <Route path='/messageReader' component={MessageReader}/>
               </Switch>
             </Col>
           </Row>

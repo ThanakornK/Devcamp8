@@ -7,7 +7,8 @@ function EnrollSideBar() {
         <div className="OwnBar" style={{height:"95vh"}}>
             <ul className="OwnbarList">
                 <li className="row"
-                onClick={() => { window.location.pathname = "/:userId/inbox"}}>
+                // onClick={() => { window.location.pathname = "/:userId/inbox"}}>
+                onClick={() => { window.location.pathname = "/messageBox"}}>
                     <div id="icon"><RiIcons.RiInboxArchiveFill /></div> <div id="title">กล่องข้อความ</div>
                 </li>
             </ul>
