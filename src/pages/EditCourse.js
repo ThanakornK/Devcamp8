@@ -57,7 +57,7 @@ function EditCourse() {
                     <div>
                         <Button onClick={() => {
 
-                            window.location.pathname = "/editCourse/:CourseId"
+                            window.location.pathname = "/library"
                         }}>Back</Button>
                     </div>
                     <div>

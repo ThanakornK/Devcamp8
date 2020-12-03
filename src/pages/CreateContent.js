@@ -68,9 +68,9 @@ function CreateContent() {
                     </Col>
                 </Row>
                 <Row style={{ display: "flex", justifyContent: "center", flexDirection: "row" }}>
-                    <Button className="center" onClick={() => window.location.pathname = "/editContent/" + state.course.course_id}>Back</Button>
+                    <Button className="center" onClick={() => window.location.pathname = "/editContent/" + state.course.id}>Back</Button>
                     <Button className="center" onClick={() => {
-                        // console.log(state)
+                        console.log(state)
                         var formData = new FormData();
                         var imagefile = document.querySelector('#file');
                         formData.append("image", imagefile.files[0]);
@@ -84,7 +84,7 @@ function CreateContent() {
                         }).then(res => {
                             console.log(res.data)
                         })
-                        window.location.pathname = "/library"
+                        window.location.pathname = window.location.pathname = "/editContent/" + state.course.id
                     }}>Confirm</Button>
                 </Row>
             </Container>
